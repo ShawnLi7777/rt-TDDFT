@@ -1,0 +1,17 @@
+[project]
+name = "rt-tddft"
+version = "0.1.0"
+description = "Minimal 1D TDSE reference solver"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
